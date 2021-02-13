@@ -1,0 +1,110 @@
+main {
+        padding: 20px;
+    }
+    
+    header {
+        margin: 50px;
+    }
+    
+    img.main-logo {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    nav {
+        background-color: red;
+        margin-top: 15px;
+        ul#myLinks {
+            list-style-type: none;
+            display: none;
+            padding-bottom: 20px;
+            a {
+                text-decoration: none;
+                font-family: 'Arial', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                display: inline-block;
+                text-align: center;
+                color: black;
+            }
+        }
+            i {
+                color: black;
+                font-size: 1.em;
+                padding: 10px;
+                text-align: center;
+                display: block;
+            }
+        
+    }
+
+h1,
+h2,
+h3 {
+    font-family: 'Georgia', sans-serif;
+}
+h1 {
+    font-size: 47px;
+}
+h2 {
+    font-size: 32px;
+    color: red;
+}
+h3 {
+    font-size: 28px;
+}
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+}
+a {
+    color: red;
+     :hover {
+        color: red;
+    }
+}
+footer {
+    text-align: center;
+    margin: 20px;
+    span.copyright {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+    }
+}
+
+/* FlexBox CSS */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item {
+    padding: 20px;
+}
+
+/* DESKTOP CSS */
+@media only screen and (min-width: 1200px) {
+    nav ul#myLinks {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+        li {
+            float: left;
+            display: inline;
+            padding: 10px;
+            list-style-type: none;
+            margin: 10px;
+        }
+    }
+    
+    nav a i.fa fa-bars {
+        display: none;
+    }
+}
